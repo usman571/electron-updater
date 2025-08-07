@@ -27,12 +27,12 @@ function App(): React.JSX.Element {
       <div className="your-existing-content flex items-center justify-center h-full w-full">
         {/* Add version display and update check button somewhere */}
         <div className="p-4 flex flex-col items-center gap-5 ">
-          <p className="text-sm text-gray-500">Version: {version || 'Unknown'}</p>
+          <p className="text-sm text-red-500">Version: {version || 'Unknown'}</p>
           <Button onClick={handleCheckUpdate} size="sm" variant="outline">
             Check for Updates
           </Button>
 
-          <p>this is new verion 1.0.6</p>
+          <p>this is new verion 1.0.7</p>
           <p>Hello there</p>
         </div>
 
