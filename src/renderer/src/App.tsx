@@ -24,13 +24,16 @@ function App(): React.JSX.Element {
   return (
     <ToastProvider>
       <UpdateNotification />
-      <div className="your-existing-content">
+      <div className="your-existing-content flex items-center justify-center h-full w-full">
         {/* Add version display and update check button somewhere */}
-        <div className="p-4">
+        <div className="p-4 flex flex-col items-center gap-5 ">
           <p className="text-sm text-gray-500">Version: {version || 'Unknown'}</p>
           <Button onClick={handleCheckUpdate} size="sm" variant="outline">
             Check for Updates
           </Button>
+
+          <p>this is new verion 1.0.6</p>
+          <p>Hello there</p>
         </div>
 
         {/* Rest of your app... */}
